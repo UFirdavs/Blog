@@ -1,0 +1,10 @@
+{% exstends 'base.html' %}
+{% block content %}
+
+<form action="" class="site-form has-background-light has-text-centered" method="post">
+    <h1 class="title is-size-2 has-text-centered">Sign in</h1>
+    {% crsf_token %}
+
+    {{ form }}
+    <button class="button is-success is-fullwidh mt-4" type="submit">Sign in</button>
+</form>

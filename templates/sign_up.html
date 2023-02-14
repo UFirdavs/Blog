@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form action="" class="site-form has-text-centered has-backround-light" method="post" style="margin-top: 120px;">
+    <h1 class="title is-size has-text-centered">Sing Up</h1>
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit" class="button is-primary is-fullwidth mt-3">
+        Sing Up
+    </button>
+    </form>
+{% endblock %}
